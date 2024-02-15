@@ -1,1 +1,13 @@
-"{\n    \"chart\": null,\n    \"images\": [\n        null,\n        null,\n        null\n    ],\n    \"administrasi\": null,\n    \"psu\": null,\n    \"ts\": \"2024-02-15 07:00:44\",\n    \"status_suara\": false,\n    \"status_adm\": false\n}"
+{
+    "chart": null,
+    "images": [
+        null,
+        null,
+        null
+    ],
+    "administrasi": null,
+    "psu": null,
+    "ts": "2024-02-15 07:00:44",
+    "status_suara": false,
+    "status_adm": false
+}

@@ -26,12 +26,12 @@ if ($data === null) {
 
         $json_url= 'https://sirekap-obj-data.kpu.go.id/pemilu/hhcw/ppwp/'.$kode_prov.'/'.$kode_kab.'/'.$kode_kec.'/'.$kode_kel.'/'.$tps['kode'].'.json';
         $json_data = file_get_contents($json_url);
-        $json_data_string = json_encode($json_data, JSON_PRETTY_PRINT);
+        // $json_data_string = json_encode($json_data, JSON_PRETTY_PRINT);
 
         $file_path_tps = $folder_path_tps.'/ppwp_0_'.$kode_prov.'_'.$kode_kab.'_'.$kode_kec.'_'.$kode_kel.'_'.$tps['kode'].'.json';
     
         // Menyimpan data ke dalam file
-        if (file_put_contents($file_path_tps, $json_data_string)) {
+        if (file_put_contents($file_path_tps, $json_data)) {
             echo "Data telah disimpan ke dalam file JSON.";
             // var_dump($file_path_prov);
             // end();
