@@ -31,7 +31,7 @@ foreach ($data_ppwp_0 as $item) {
     $file_path_prov = $folder_path_prov.'/ppwp_0_'.$item['kode'].'.json';
  
     // Menyimpan data ke dalam file
-    if (file_put_contents($file_path_prov, $json_prov_string)) {
+    if (file_put_contents($file_path_prov, $json_data_prov)) {
         echo "Data telah disimpan ke dalam file JSON.";
         // var_dump($file_path_prov);
         // end();

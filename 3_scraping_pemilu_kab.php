@@ -1,7 +1,7 @@
 <?php
 // URL JSON yang akan di-scrap
 // $json_url = 'https://sirekap-obj-data.kpu.go.id/wilayah/pemilu/ppwp/0.json';
-$kode_prov = 11;
+$kode_prov = 35;
 $json_url = 'https://sirekap-obj-data.kpu.go.id/wilayah/pemilu/ppwp/'.$kode_prov.'.json';
 
 // Mengambil data dari URL JSON
@@ -23,12 +23,12 @@ if ($data === null) {
 
         $json_url_kab = 'https://sirekap-obj-data.kpu.go.id/wilayah/pemilu/ppwp/'.$kode_prov.'/'.$kab['kode'].'.json';
         $json_data_kab = file_get_contents($json_url_kab);
-        $json_kab_string = json_encode($json_data_kab, JSON_PRETTY_PRINT);
+        // $json_kab_string = json_encode($json_data_kab, JSON_PRETTY_PRINT);
 
         $file_path_kab = $folder_path_kab.'/ppwp_0_'.$kode_prov.'_'.$kab['kode'].'.json';
     
         // Menyimpan data ke dalam file
-        if (file_put_contents($file_path_kab, $json_kab_string)) {
+        if (file_put_contents($file_path_kab, $json_data_kab)) {
             echo "Data telah disimpan ke dalam file JSON.";
             // var_dump($file_path_prov);
             // end();

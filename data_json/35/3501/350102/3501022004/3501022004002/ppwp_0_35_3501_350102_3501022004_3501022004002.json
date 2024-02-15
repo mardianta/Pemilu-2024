@@ -1,0 +1,18 @@
+{
+    "chart": {
+        "null": null,
+        "100025": 17,
+        "100026": 143,
+        "100027": 7
+    },
+    "images": [
+        "https://sirekap-obj-formc.kpu.go.id/7a74/pemilu/ppwp/35/01/02/20/04/3501022004002-20240214-155633--5f43b007-eeaa-4c72-9718-13802eb7ef5b.jpg",
+        "https://sirekap-obj-formc.kpu.go.id/7a74/pemilu/ppwp/35/01/02/20/04/3501022004002-20240214-155913--2a9fb2cf-2c9f-4623-b802-017e4047a02e.jpg",
+        "https://sirekap-obj-formc.kpu.go.id/7a74/pemilu/ppwp/35/01/02/20/04/3501022004002-20240214-160118--5aa0a6da-8dca-42af-9dbe-c1db6044086d.jpg"
+    ],
+    "administrasi": null,
+    "psu": null,
+    "ts": "2024-02-14 21:46:01",
+    "status_suara": true,
+    "status_adm": false
+}

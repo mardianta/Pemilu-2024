@@ -15,10 +15,10 @@ if ($data === null) {
 } else {
     // Menyimpan data ke dalam file JSON lokal
     $file_path = 'data_json/ppwp_0.json';
-    $json_string = json_encode($data, JSON_PRETTY_PRINT);
+    // $json_string = json_encode($data, JSON_PRETTY_PRINT);
     
     // Menyimpan data ke dalam file
-    if (file_put_contents($file_path, $json_string)) {
+    if (file_put_contents($file_path, $json_data)) {
         echo "Data telah disimpan ke dalam file JSON.";
     } else {
         echo "Gagal menyimpan data ke dalam file JSON.";
