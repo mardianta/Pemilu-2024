@@ -1,7 +1,23 @@
 <?php
-// URL JSON yang akan di-scrap
+
+// Folder utama
+$folder_utama = 'data_json';
+
+// Mendapatkan daftar file dan folder di dalam folder utama
+$daftar_item = scandir($folder_utama);
+
+// Menginisialisasi array untuk menyimpan nama subfolder
+$subfolder_names = array();
+
+// Loop melalui setiap item
+foreach ($daftar_item as $item) {
+    // Memeriksa apakah item adalah folder dan bukan "." atau ".."
+    if (is_dir($folder_utama . '/' . $item) && $item != '.' && $item != '..') {
+        // Menyimpan nama folder ke dalam array
+        $subfolder_names[] = $item;
+        // URL JSON yang akan di-scrap
 // $json_url = 'https://sirekap-obj-data.kpu.go.id/wilayah/pemilu/ppwp/0.json';
-$kode_prov = 35;
+$kode_prov = $item;
 $json_url = 'https://sirekap-obj-data.kpu.go.id/wilayah/pemilu/ppwp/'.$kode_prov.'.json';
 
 // Mengambil data dari URL JSON
@@ -39,4 +55,11 @@ if ($data === null) {
         }
     }
 }
+    }
+}
+
+// Menampilkan array nama subfolder
+print_r($subfolder_names);
+
+
 ?>

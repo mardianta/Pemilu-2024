@@ -1,8 +1,10 @@
 <?php
 // URL JSON yang akan di-scrap
 // $json_url = 'https://sirekap-obj-data.kpu.go.id/wilayah/pemilu/ppwp/0.json';
-$kode_prov = 35;
-$kode_kab = 3502;
+$kode_prov = $_GET['kode_prov'];
+$kode_kab = $_GET['kode_kab'];
+// var_dump($kode_kab);
+// end();
 $json_url = 'https://sirekap-obj-data.kpu.go.id/wilayah/pemilu/ppwp/'.$kode_prov.'.json';
 
 // Mengambil data dari URL JSON
