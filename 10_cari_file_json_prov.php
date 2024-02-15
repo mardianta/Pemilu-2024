@@ -22,7 +22,7 @@ function cariFileDalamFolder($folderPath, $isi) {
 
     return $result;
 }
-$kode_prov = 51;
+$kode_prov = 36;
 $folderPath = "data_json/".$kode_prov; // Ganti dengan path folder Anda
 $isiYangDicari = 'status_suara';
 
