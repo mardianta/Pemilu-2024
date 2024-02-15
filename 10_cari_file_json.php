@@ -35,7 +35,7 @@ echo "<meta name='viewport' content='width=device-width, initial-scale=1.0'>";
 echo "<title>Data JSON</title>";
 echo "</head>";
 echo "<body>";
-echo "File yang mengandung isi tersebut: <br>";
+echo "File yang mengandung isi tersebut: ".count($filesWithContent) ."TPS <br>";
 echo "<table>";
 echo "<tr>";
 echo "<td>anies</td>";
