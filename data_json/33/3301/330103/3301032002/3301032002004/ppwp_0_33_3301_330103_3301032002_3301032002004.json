@@ -1,0 +1,18 @@
+{
+    "chart": {
+        "null": null,
+        "100025": 18,
+        "100026": 150,
+        "100027": 44
+    },
+    "images": [
+        "https://sirekap-obj-formc.kpu.go.id/edde/pemilu/ppwp/33/01/03/20/02/3301032002004-20240214-204425--96402ff9-ba41-4bfc-b9d7-d081036bba80.jpg",
+        "https://sirekap-obj-formc.kpu.go.id/edde/pemilu/ppwp/33/01/03/20/02/3301032002004-20240214-232812--78497141-155e-4e1f-9eea-75aa29f5f39c.jpg",
+        "https://sirekap-obj-formc.kpu.go.id/edde/pemilu/ppwp/33/01/03/20/02/3301032002004-20240215-210243--d42464ce-aa93-4455-bbf2-851a8b83e7df.jpg"
+    ],
+    "administrasi": null,
+    "psu": null,
+    "ts": "2024-02-15 23:29:50",
+    "status_suara": true,
+    "status_adm": false
+}
